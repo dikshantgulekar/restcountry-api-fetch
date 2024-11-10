@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> REST COUNTRY FETCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="https://static.vecteezy.com/system/resources/previews/050/652/059/non_2x/3d-illustration-of-earth-globe-isolated-on-white-background-photo.jpeg" alt="Globe" width="80px" height="80px">
+            <a class="navbar-brand"><h1>COINTRIES</h1></a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" id="countryName" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" id='search' type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+      
+            <div class="col-md-3 sidebar">
+                <div class="filter-header">
+                    <h5>250 Countries</h5>
+                    <!-- <button class="btn btn-link clear-filters">Clear Filters</button> -->
+                </div>
+                <div class="alphabet-filter">
+                  
+                    <div class="row text-center">
+                        <div onclick="get_val(this)" class="col-3">A</div>
+                        <div onclick="get_val(this)" class="col-3">B</div>
+                        <div onclick="get_val(this)" class="col-3">C</div>
+                        <div onclick="get_val(this)" class="col-3">D</div>
+                        <div onclick="get_val(this)" class="col-3">E</div>
+                        <div onclick="get_val(this)" class="col-3">F</div>
+                        <div onclick="get_val(this)" class="col-3">G</div>
+                        <div onclick="get_val(this)" class="col-3">H</div>
+                        <div onclick="get_val(this)" class="col-3">I</div>
+                        <div onclick="get_val(this)" class="col-3">J</div>
+                        <div onclick="get_val(this)" class="col-3">K</div>
+                        <div onclick="get_val(this)" class="col-3">L</div>
+                        <div onclick="get_val(this)" class="col-3">M</div>
+                        <div onclick="get_val(this)" class="col-3">N</div>
+                        <div onclick="get_val(this)" class="col-3">O</div>
+                        <div onclick="get_val(this)" class="col-3">P</div>
+                        <div onclick="get_val(this)" class="col-3">Q</div>
+                        <div onclick="get_val(this)" class="col-3">R</div>
+                        <div onclick="get_val(this)" class="col-3">S</div>
+                        <div onclick="get_val(this)" class="col-3">T</div>
+                        <div onclick="get_val(this)" class="col-3">U</div>
+                        <div onclick="get_val(this)" class="col-3">V</div>
+                        <div onclick="get_val(this)" class="col-3">W</div>
+                        <div onclick="get_val(this)" class="col-3">X</div>
+                        <div onclick="get_val(this)" class="col-3">Y</div>
+                        <div onclick="get_val(this)" class="col-3">Z</div>
+                        <div class="col-6">
+                            <button class="btn btn-danger" id="allCountries">ALL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      
+            <div class="col-md-9 main-content">
+       
+
+                <div class="row" id="product-container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

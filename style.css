@@ -1,0 +1,109 @@
+/* Background and Navbar */
+body {
+    background: url('https://static.vecteezy.com/system/resources/previews/013/836/237/non_2x/world-map-complete-with-all-countries-free-png.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-body-tertiary {
+    background: transparent !important;
+}
+
+nav {
+    z-index: 100 !important;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-filters {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.alphabet-filter div {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.alphabet-filter div:hover {
+    color: red;
+    border: 1px solid red;
+    padding: 8px;
+}
+
+/* All Button Styling */
+.alphabet-filter .btn-danger {
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 20px;
+}
+
+.country-list p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Responsive for mobile screens */
+@media only screen and (max-width: 575px) {
+    .sidebar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .filter-header h5 {
+        font-size: 16px;
+    }
+
+    .alphabet-filter div {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .alphabet-filter .btn-danger {
+        font-size: 14px;
+    }
+
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .country-list p {
+        font-size: 20px;
+    }
+
+    #search{
+        background-color: black;
+        color: white;
+    }
+}
